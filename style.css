@@ -582,6 +582,16 @@ header::before {
     display: none;
 }
 
+/* --------------WhatsApp Button------ */
+.whats {
+    width: 65px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 9999;
+}
+
+
 @media (width < 900px) {
     
     .hideOnMobile {
