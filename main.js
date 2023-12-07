@@ -1,3 +1,18 @@
+//----------------  Side Menu small screen----------------------
+function showSidebar(){
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'flex'
+}
+function hideSidebar(){
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'none'
+}
+
+
+
+// ----------------------ScrollReveal-----------
+
+
 const scrollRevealOption = {
     distance: "50px",
     origin: "bottom",
@@ -26,4 +41,68 @@ ScrollReveal().reveal(".header__container img", {
     origin: "right",
 });
 
+// ------------Why Container------------
 
+ScrollReveal().reveal(".why__container .section__header", {
+    ...scrollRevealOption,
+    delay: 500,
+});
+
+ScrollReveal().reveal(".why__container p", {
+    ...scrollRevealOption,
+    delay: 1000,
+});
+ScrollReveal().reveal(".why__container li", {
+    ...scrollRevealOption,
+    delay: 1500,
+    interval: 500,
+});
+
+ScrollReveal().reveal(".why__container img", {
+    ...scrollRevealOption,
+    origin: "left",
+});
+
+// ----------------------Hero Container -------------
+
+ScrollReveal().reveal(".hero__card", {
+    ...scrollRevealOption,
+    interval: 500,
+})
+
+// -------------Classes Container------------
+
+ScrollReveal().reveal(".classes__image", {
+    duration: 1000,
+    interval: 500,
+})
+
+
+// -------------Price Container------------
+
+ScrollReveal().reveal(".membership__card", {
+    ...scrollRevealOption,
+    interval: 500,
+})
+
+
+// --------------Stories Container------------
+
+ScrollReveal().reveal(".stories__card", {
+    ...scrollRevealOption,
+    interval: 500,
+})
+
+// -------------Posts Container-----------
+
+ScrollReveal().reveal(".posts__card", {
+    ...scrollRevealOption,
+    interval: 500,
+})
+
+// -------------Photos Container------------
+
+ScrollReveal().reveal(".photos__card", {
+    duration: 1000,
+    interval: 500,
+})

@@ -5,30 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css" rel="stylesheet">
     <script src="https://unpkg.com/scrollreveal"></script>
     <title>Movimento Anumandhayya</title>
 </head>
 <body>
     <nav>
-        <div class="nav__logo">
-            <img src="img/logo.png" alt="logo">
-            <span>Yogalax</span>
-        </div>
-        <ul class="nav__links">
+        <ul class="sidebar">
+            <i class="ri-close-line"  onclick=hideSidebar()></i>
             <li class="link"><a href="#home">Início</a></li>
             <li class="link"><a href="#classes">Aulas</a></li>
-            <li class="link"><a href="#menbership">Comunidade</a></li>
-            <li class="link"><a href="#stories">Sobre</a></li>
+            <li class="link"><a href="#membership">Comunidade</a></li>
+            <li class="link"><a href="#stories">Historias</a></li>
             <li class="link"><a href="#posts">Blog</a></li>
             <li class="link"><a href="#contact">Contato</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">Yoga Personal</a></li>
+            <li class="hideOnMobile"><a href="#home">Início</a></li>
+            <li class="hideOnMobile"><a href="#classes">Aulas</a></li>
+            <li class="hideOnMobile"><a href="#membership">Comunidade</a></li>
+            <li class="hideOnMobile"><a href="#stories">Historias</a></li>
+            <li class="hideOnMobile"><a href="#posts">Blog</a></li>
+            <li class="hideOnMobile"><a href="#contact">Contato</a></li>
+           <i class="ri-menu-line menu-button" onclick=showSidebar()></i>
+            
+            
         </ul>
     </nav>
     <header id="home">
         <div class="section__container header__container">
             <div class="header__content">
-                <h1>Effective Yoga</h1>
+                <h1>Personal Yoga</h1>
                 <h2>Faça yoga hoje para um amanhã melhor</h2>
-                <button class="btn"> 15 Dias de Teste Grátis</button>
+                <button class="btn">Teste Grátis</button>
             </div>
             <div class="header__image">
                 <img src="img/header.jpg" alt="header">
@@ -36,6 +46,368 @@
             </div>
         </div>
     </header>
+
+<!-- ------------------Why---------- -->
+
+    <section class="section__container why__container">
+        <div class="why__image">
+            <img src="img/why.jpg" alt="why yoga">
+        </div>
+        <div class="why__content">
+            <h2 class="section__header">Por que você deve ir para o yoga</h2>
+            <p>
+                Yoga oferece uma abordagem holística do bem -estar, abrangendo
+                 benefícios físicos e mentais. Através de uma série de poses,
+                 Alongamentos e força muscular. Seus aspectos meditativos incentivam
+                 atenção plena, reduzindo o estresse e a ansiedade enquanto promove uma sensação de
+                 paz interior.
+            </p>
+            <ul>
+                <li>
+                    <span><i class="ri-checkbox-circle-fill"></i></span>
+                    Yoga aumenta o poder cerebral
+                </li>
+                <li>
+                    <span><i class="ri-checkbox-circle-fill"></i></span>
+                    Yoga ajuda você a respirar melhor
+                </li>
+                <li>
+                    <span><i class="ri-checkbox-circle-fill"></i></span>
+                    Yoga melhora sua força
+                </li>
+                <li>
+                    <span><i class="ri-checkbox-circle-fill"></i></span>
+                    Yoga ajuda você a se concentrar
+                </li>
+                <li>
+                    <span><i class="ri-checkbox-circle-fill"></i></span>
+                    Yoga ajuda a dar sentido ao seu dia
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="hero" id="hero">
+        <div class="section__container hero__container">
+          <div class="hero__card">
+            <span><img src="img/icon-1.png" alt="hero" /></span>
+            <h4>Estilo de vida saudável</h4>
+            <p>
+                Abrace um estilo de vida saudável através do poder transformador do yoga
+                e cultive vitalidade física e paz interior.
+            </p>
+          </div>
+          <div class="hero__card">
+            <span><img src="img/icon-2.png" alt="hero" /></span>
+            <h4>Equilíbrio de corpo e mente</h4>
+            <p>
+                Através de poses propositadas e respiração consciente, o yoga cultiva um
+                Corpo forte e flexível enquanto nutra a calma interior.
+            </p>
+          </div>
+          <div class="hero__card">
+            <span><img src="img/icon-3.png" alt="hero" /></span>
+            <h4>Prática de meditação</h4>
+            <p>
+                Descubra serenidade interior e atenção plena ao cultivar uma profunda
+                conexão com o momento presente.
+            </p>
+          </div>
+          <div class="hero__card">
+            <span><img src="img/icon-4.png" alt="hero" /></span>
+            <h4>Autocuidados</h4>
+            <p>
+                Descubra o poder transformador do autocuidado através do yoga e
+                Abrace momentos de tranquilidade e atenção plena.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section__container classes__container" id="classes">
+        <p class="section__subheader">LAUYOGA</p>
+        <h2 class="section__header">Tipos de Aulas</h2>
+        <div class="classes__grid">
+            <div class="classes__image">
+                <img src="img/classes-1.jpg" alt="classes">
+                <div class="classes__content">
+                    <h3>Yoga Empresa</h3>
+                    <p>Aumente o foco e a motivação de seus colaboradores</p>
+                </div>
+            </div>
+            <div class="classes__image">
+                <img src="img/classes-2.jpg" alt="classes">
+                <div class="classes__content">
+                    <h3>Yoga Online</h3>
+                    <p>Tenha a flexibilidade de praticar onde estiver</p>
+                </div>
+            </div>
+            <div class="classes__image">
+                <img src="img/classes-3.jpg" alt="classes">
+                <div class="classes__content">
+                    <h3>Yoga Parque</h3>
+                    <p>O benefício da prática de Yoga num espaço cheio de natureza</p>
+                </div>
+            </div>
+            <div class="classes__image">
+                <img src="img/classes-4.jpg" alt="classes">
+                <div class="classes__content">
+                    <h3>Yoga Personal</h3>
+                    <p>Aula individual para um desenvolvimento rápido</p>
+                </div>
+            </div>
+            <div class="classes__image">
+                <img src="img/classes-5.jpg" alt="classes">
+                <div class="classes__content">
+                    <h3>Yoga Shala</h3>
+                    <p>Venha ao nosso local para trabalhar seu eu interior e crescer</p>
+                </div>
+            </div>
+            <div class="classes__image">
+                <img src="img/classes-6.jpg" alt="classes">
+                <div class="classes__content">
+                    <h3>Mentoria</h3>
+                    <p>Aconselhamento filosófico e orientação técnica para desenvolver habilidades específicas</p>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <!-- ------------------Price----------- -->
+
+      <section class="membership" id="membership">
+        <div class="section__container membership__container">
+            <p class="section__subheader">ALÉM DO YOGA</p>
+            <h2 class="section__header">Comunidade Expert</h2>
+            <div class="membership__grid">
+                <div class="membership__card">
+                    <h4>MEMBRO PRATA</h4>
+                    <h2><sup>R$</sup>99</h2>
+                    <h3>Por Mês</h3>
+                    <h4>APROVEITE OS RECURSOS</h4>
+                    <p>Acesso a aulas exclusivas</p>
+                    <p>Prioridade em agendamentos</p>
+                    <p>1 mentoria mês</p>
+                    <button class="btn membership__btn">GET STARTED</button>
+                </div>
+                <div class="membership__card">
+                    <h4>MEMBRO OURO</h4>
+                    <h2><sup>R$</sup>139</h2>
+                    <h3>Por Mês</h3>
+                    <h4>APROVEITE OS RECURSOS</h4>
+                    <p>Acesso a aulas exclusivas</p>
+                    <p>Prioridade em agendamentos</p>
+                    <p>1 mentoria mês</p>
+                    <p>2 Aulas particulares</p>
+                    <button class="btn membership__btn">GET STARTED</button>
+                </div>
+                <div class="membership__card">
+                    <h4>MEMBRO DIAMANTE</h4>
+                    <h2><sup>R$</sup>189</h2>
+                    <h3>Por Mês</h3>
+                    <h4>APROVEITE OS RECURSOS</h4>
+                    <p>Acesso a aulas exclusivas</p>
+                    <p>Prioridade em agendamentos</p>
+                    <p>4 mentoria mês</p>
+                    <p>2 Aulas particulares</p>
+                    <p>1 Livro mês</p>
+                    <button class="btn membership__btn">GET STARTED</button>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <!-- -------------------Stories----------- -->
+
+      <section class="section__container stories__container" id="stories">
+        <p class="section__subheader">TESTEMUNHOS</p>
+        <h2 class="section__header">Histórias de sucesso</h2>
+        <div class="stories__grid">
+            <div class="stories__card">
+                <div class="stories__content">
+                    <span><i class="ri-double-quotes-l"></i></span>
+                    <p>
+                        O yoga tem sido um divisor de águas para mim. As
+                         aulas e sessões guiadas não apenas melhoraram minha flexibilidade
+                         mas também trouxe uma sensação de calma aos meus dias agitados.
+                    </p>
+                </div>
+                <div class="stories__author">
+                    <img src="img/stories-1.jpg" alt="author">
+                    <div class="stories__author__details">
+                        <h4>Raquel Santos</h4>
+                        <h6>Membro</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="stories__card">
+                <div class="stories__content">
+                    <span><i class="ri-double-quotes-l"></i></span>
+                    <p>
+                        As aulas sob demanda me permitem praticar sempre que posso, e os
+                         exercícios de atenção plena trouxeram um novo nível de clareza a minha
+                         vida. Uma visita obrigatória para quem procura bem-estar.
+                    </p>
+                </div>
+                <div class="stories__author">
+                    <img src="img/stories-2.jpg" alt="author">
+                    <div class="stories__author__details">
+                        <h4>Samdra Martins</h4>
+                        <h6>Membro</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="stories__card">
+                <div class="stories__content">
+                    <span><i class="ri-double-quotes-l"></i></span>
+                    <p>
+                        As sessões personalizadas e orientações especializadas não apenas aliviaram meu
+                         desconforto, mas também aumentou meu bem-estar geral. Fantasticos
+                         recursos para iniciantes e experientes.
+                    </p>
+                </div>
+                <div class="stories__author">
+                    <img src="img/stories-3.jpg" alt="author">
+                    <div class="stories__author__details">
+                        <h4>Ana Silva</h4>
+                        <h6>Membro</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <!-- -------------Banner---------------- -->
+
+      <section class="banner">
+        <div class="section__container banner__container">
+            <div class="banner__card">
+                <h4>+850</h4>
+                <p>Alunos Felizes</p>
+            </div>
+            <div class="banner__card">
+                <h4>+4.560</h4>
+                <p>Yoga Workshops</p>
+            </div>
+            <div class="banner__card">
+                <h4>+10</h4>
+                <p>Anos de Experiência</p>
+            </div>
+            <div class="banner__card">
+                <h4>+9.000</h4>
+                <p>Lição Realizada</p>
+            </div>
+        </div>
+      </section>
+
+      <!-- -------------Posts----------- -->
+
+      <section class="posts" id="posts">
+        <div class="section__container posts__container">
+          <p class="section__subheader">BLOG</p>
+          <h2 class="section__header">Recentes Posts</h2>
+          <div class="posts__grid">
+            <div class="posts__card">
+              <img src="img/posts-1.jpg" alt="post" />
+              <div class="posts__content">
+                <div class="posts__date">
+                  <span>31</span>
+                  <div>
+                    <p>Dezembro</p>
+                    <p>2021</p>
+                  </div>
+                </div>
+                <h4>Desbloqueando a Paz Interior</h4>
+                <p>
+                    Mergulhe nas práticas que ajudam a cultivar a paz interior,
+                    Reduza o estresse e aumente seu bem-estar geral.
+                </p>
+              </div>
+            </div>
+            <div class="posts__card">
+              <img src="img/posts-2.jpg" alt="post" />
+              <div class="posts__content">
+                <div class="posts__date">
+                  <span>25</span>
+                  <div>
+                    <p>Março</p>
+                    <p>2022</p>
+                  </div>
+                </div>
+                <h4>Da Escrivaninha para o Tapete</h4>
+                <p>
+                    Aprenda incorporando alongamentos simples de yoga e respiração
+                    técnicas para combater efeitos do estilo de vida sedentário.
+                </p>
+              </div>
+            </div>
+            <div class="posts__card">
+              <img src="img/posts-3.jpg" alt="post" />
+              <div class="posts__content">
+                <div class="posts__date">
+                  <span>06</span>
+                  <div>
+                    <p>Agosto</p>
+                    <p>2022</p>
+                  </div>
+                </div>
+                <h4>Yoga através dos tempos</h4>
+                <p>
+                    De Yoga no pré-natal a Yoga sênior, descubra o aprimoramento
+                     da flexibilidade e promova um amor ao longo da vida.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section__container photos__container">
+        <p class="section__subheader">GALERIA</p>
+        <h2 class="section__header">Veja as Últimas Fotos</h2>
+        <div class="photos__grid">
+            <div class="photos__card">
+                <img src="img/photos-1.jpg" alt="photo">
+            </div>
+            <div class="photos__card">
+                <img src="img/photos-2.jpg" alt="photo">
+            </div>
+            <div class="photos__card">
+                <img src="img/photos-3.jpg" alt="photo">
+            </div>
+            <div class="photos__card">
+                <img src="img/photos-4.jpg" alt="photo">
+            </div>
+        </div>
+      </section>
+
+      <footer class="footer" id="contact">
+        <div class="section__container footer__container">
+            <div class="footer__col">
+                <div class="footer__logo"><a href="#">Personal Yoga</a></div>
+            </div>
+            <div class="footer__col">
+                <p>Rua Dos Bambus Nº0, São Paulo </p>
+            </div>
+            <div class="footer__col">
+                <div class="footer__socials">
+                    <a href="#"><i class="ri-twitter-x-line"></i></a>
+                    <a href="#"><i class="ri-instagram-line"></i></a>
+                    <a href="#"><i class="ri-whatsapp-line"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="section__container footer__bar">
+            Copyright © 2023 Guilherme Cunha. All rights reserved.
+        </div>
+
+      </footer>
+
+
+
+
+
     <script src="main.js"></script>
 </body>
 </html>
