@@ -39,11 +39,12 @@
 
 .btn {
     padding: 1rem 1.5rem;
+    margin: 3rem 1.5rem;
     outline: none;
     border: none;
     font-size: 1rem;
-    color: var(--white);
-    background-color: var(--primary-color);
+    color: var(--text-dark);
+    background-color: var(--primary-color-light);
     border-radius: 5rem;
     cursor: pointer;
 }
@@ -246,6 +247,101 @@ header::before {
     font-size: 1.2rem;
     color: var(--primary-color);
 }
+
+/* -------------ONLINE CLASS TEST----------- */
+
+  
+.stats {
+    padding: 2rem 0;
+    background-image: linear-gradient(to right, rgb(70, 63, 63), transparent),
+    url("img/online_class_bg.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .stats__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  
+  .stats__content .section__header {
+    margin-bottom: 1rem;
+    color: var(--white);
+  }
+  
+  .stats__content .para {
+    margin-bottom: 2rem;
+    color: var(--white);
+  }
+  
+  .stats__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  
+  .stats__card span {
+    font-size: 1.75rem;
+    color: var(--white);
+  }
+  .section__subheader {
+    color: var(--extra-light);
+  }
+  
+  .stats__card h4 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--white);
+  }
+  
+  .stats__card p {
+    font-weight: 500;
+  }
+  
+  .stats__image {
+    display: grid;
+    gap: 2rem;
+  }
+  
+  .stats__image img {
+    max-width: 450px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------ONLINE CLASS TEST----------- */
+
+
+
+
+
+
+
+
+
+
+
 
 /* --------------Hero---------------- */
 
@@ -630,6 +726,15 @@ header::before {
     .why__content :is(.section__header, p) {
       text-align: center;
     }
+    .stats__container {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    
+      .stats__image {
+        grid-area: 1/1/2/2;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+      }
   
     .hero__container {
       grid-template-columns: repeat(2, 1fr);
@@ -673,6 +778,9 @@ header::before {
     .nav__links {
       gap: 0.5rem;
     }
+    .stats__image {
+        grid-template-columns: repeat(1, 1fr);
+      }
   
     .classes__grid {
       grid-template-columns: repeat(2, 1fr);
@@ -687,6 +795,10 @@ header::before {
     .nav__links {
       display: none;
     }
+
+    .stats__image {
+        grid-template-columns: repeat(1, 1fr);
+      }
   
     .hero__container {
       grid-template-columns: repeat(1, 1fr);
