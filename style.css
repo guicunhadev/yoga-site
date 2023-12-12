@@ -33,13 +33,13 @@
     font-size: 1rem;
     font-weight: 300;
     text-align: center;
-    color: var(--text-light);
+    color: var(--text-dark);
     letter-spacing: 2px;
 }
 
 .btn {
     padding: 1rem 1.5rem;
-    margin: 3rem 1.5rem;
+    margin: 2rem .5rem;
     outline: none;
     border: none;
     font-size: 1rem;
@@ -47,6 +47,12 @@
     background-color: var(--primary-color-light);
     border-radius: 5rem;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+  color: var(--extra-light);
+  background-color: var(--primary-color);
 }
 
 img {
@@ -286,9 +292,21 @@ header::before {
     font-size: 1.75rem;
     color: var(--white);
   }
-  .section__subheader {
+
+  .section__class__header {
+    font-size: 3rem;
+    font-weight: 300;
+    text-align: center;
     color: var(--extra-light);
   }
+
+  .section__class__subheader {
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: center;
+    color: var(--extra-light);
+    letter-spacing: 2px;
+    }
   
   .stats__card h4 {
     font-size: 2rem;
@@ -331,6 +349,53 @@ header::before {
 
 
 /* -------------ONLINE CLASS TEST----------- */
+
+
+/* ------------- CLASS TEST----------- */
+
+.trip {
+  background-color: var(--secondary-color);
+}
+
+.trip__container :is(.section__title, .section__subtitle, .view__all) {
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.trip__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  gap: 2rem;
+  margin: 4rem 0;
+}
+
+.trip__card {
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+}
+
+.trip__details {
+  padding: 1rem;
+  display: grid;
+  gap: 0.5rem;
+  font-size: 1rem;
+  color: var(--text-dark);
+}
+
+.trip__details h3 {
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+.trip__details p {
+    margin-bottom: 1.5rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+    color: var(--text-light);
+}
 
 
 
@@ -727,14 +792,18 @@ header::before {
       text-align: center;
     }
     .stats__container {
-        grid-template-columns: repeat(1, 1fr);
-      }
+      grid-template-columns: repeat(1, 1fr);
+    }
     
-      .stats__image {
-        grid-area: 1/1/2/2;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 1rem;
-      }
+    .stats__image {
+      grid-area: 1/1/2/2;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 1rem;
+    }
+
+    .trip__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
   
     .hero__container {
       grid-template-columns: repeat(2, 1fr);
@@ -798,7 +867,11 @@ header::before {
 
     .stats__image {
         grid-template-columns: repeat(1, 1fr);
-      }
+    }
+
+    .trip__grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
   
     .hero__container {
       grid-template-columns: repeat(1, 1fr);
