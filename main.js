@@ -41,27 +41,7 @@ ScrollReveal().reveal(".header__container img", {
     origin: "right",
 });
 
-// ------------Why Container------------
 
-ScrollReveal().reveal(".why__container .section__header", {
-    ...scrollRevealOption,
-    delay: 500,
-});
-
-ScrollReveal().reveal(".why__container p", {
-    ...scrollRevealOption,
-    delay: 1000,
-});
-ScrollReveal().reveal(".why__container li", {
-    ...scrollRevealOption,
-    delay: 1500,
-    interval: 500,
-});
-
-ScrollReveal().reveal(".why__container img", {
-    ...scrollRevealOption,
-    origin: "left",
-});
 
 // ----------------------Hero Container -------------
 
@@ -70,20 +50,60 @@ ScrollReveal().reveal(".hero__card", {
     interval: 500,
 })
 
-// -------------Classes Container------------
 
-ScrollReveal().reveal(".classes__image", {
-    duration: 1000,
-    interval: 500,
-})
+// -------------Online Class Container------------
 
-
-// -------------Price Container------------
-
-ScrollReveal().reveal(".membership__card", {
+ScrollReveal().reveal(".online__container", {
     ...scrollRevealOption,
     interval: 500,
 })
+
+ScrollReveal().reveal(".online__class__content .para", {
+    ...scrollRevealOption,
+    delay: 1000,
+});
+ScrollReveal().reveal(".online__class__card", {
+    ...scrollRevealOption,
+    delay: 1500,
+    interval: 500,
+});
+
+ScrollReveal().reveal(".online__class__image img", {
+    ...scrollRevealOption,
+    origin: "right",
+});
+
+// -------------Class Container------------
+
+ScrollReveal().reveal(".class__card", {
+    ...scrollRevealOption,
+    interval: 500,
+});
+
+
+
+// ------------About Container------------
+
+ScrollReveal().reveal(".about__container .section__header", {
+    ...scrollRevealOption,
+    delay: 500,
+});
+
+ScrollReveal().reveal(".about__container p", {
+    ...scrollRevealOption,
+    delay: 1000,
+});
+ScrollReveal().reveal(".about__container li", {
+    ...scrollRevealOption,
+    delay: 1500,
+    interval: 500,
+});
+
+ScrollReveal().reveal(".about__container img", {
+    ...scrollRevealOption,
+    origin: "left",
+});
+
 
 
 // --------------Stories Container------------
