@@ -209,7 +209,7 @@ header::before {
 
 
 
-/* -------------ONLINE CLASS TEST----------- */
+/* -------------ONLINE CLASS ----------- */
 
   
 .online__container {
@@ -339,14 +339,17 @@ header::before {
 .about__container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
   align-items: center;
+
 }
 
 .about__image img {
-  max-width: 600px;
+  max-width: 500px;
   margin: auto;
+  border-radius: 10px;
 }
-
+rep
 .about__content .section__header {
   margin-bottom: 1rem;
   text-align: left;
@@ -441,60 +444,6 @@ header::before {
     bottom: 0;
 }
 
-/* ----------------Price---------- */
-
-.membership__grid {
-    margin-top: 4rem;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-}
-
-.membership__card {
-    padding: 2rem 2rem 5rem 2rem;
-    text-align: center;
-    background-color: var(--white);
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.05);
-}
-
-.membership__card h4 {
-    font-size: 1rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-    color: var(--text-dark);
-}
-
-.membership__card h2 {
-    margin-bottom: 1rem;
-    font-size: 3.5rem;
-    font-weight: 500;
-    color: var(--primary-color);
-}
-
-.membership__card h2 sup {
-    font-size: 1.5rem;
-}
-
-.membership__card h3 {
-    margin-bottom: 1.5rem;
-    font-size: 1rem;
-    font-weight: 500;
-    color: var(--text-light);
-}
-
-.membership__card p {
-    margin-bottom: 1.5rem;
-    color: var(--text-light);
-}
-
-.membership__btn {
-    width: calc(100% - 4rem);
-    font-size: -9rem;
-    font-weight: 600;
-    letter-spacing: 1px;
-    border-radius: 2px;
-    transform: translateY(calc(50% + 2rem));
-}
 
 /* --------------Stories------------- */
 
@@ -507,6 +456,7 @@ header::before {
 
 .stories__card {
     padding: 1rem;
+    min-height:100%;
 }
 
 .stories__content {
@@ -516,6 +466,7 @@ header::before {
     display: flex;
     align-items: center;
     gap: 1rem;
+    height:80%;
 }
 
 .stories__content span {
@@ -658,7 +609,7 @@ header::before {
 }
 
 .footer {
-    background-color: var(--primary-color-light);
+    background-color: var(--primary-color);
 }
 
 .footer__container {
@@ -716,6 +667,58 @@ header::before {
     right: 30px;
     z-index: 9999;
 }
+
+
+/* --------------Cookies Msg----------- */
+
+.cookies-msg {
+  width: 80%;
+  background-color: var(--white);
+  position: fixed;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 15px;
+  z-index: 9999;
+  display: none;
+}
+
+.cookies-msg.mostrar{
+  display: block;
+}
+
+.cookies-msg .cookies-txt {
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  padding: 20px;
+}
+
+.cookies-msg .cookies-txt p {
+  color: var(--text-dark);
+}
+
+.cookies-msg .cookies-btn {
+  margin-left: 30px;
+
+}
+
+.cookies-msg .cookies-btn button {
+  background-color: black;
+  color: var(--white);
+  font-weight: 700;
+  font-size: 18px;
+  padding: 10px 40px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.cookies-msg .cookies-btn button:hover{
+  transform: scale(0.9);
+}
+
+
+
 
 
 @media (width < 900px) {
