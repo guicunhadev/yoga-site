@@ -391,7 +391,7 @@ rep
   justify-content: center;
   width: 75px;
   aspect-ratio: 1;
-  background-color: grey;
+  background-color: rgb(29, 22, 22);
   border-radius: 100%;
 }
 
