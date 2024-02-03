@@ -1,17 +1,24 @@
 // -------------Cookies----------------
 
-var msgCookies = document.getElementById('cookies-msg')
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#f5f5f5",
+      "text": "#000000"
+    },
+    "button": {
+      "background": "#fdaa3a",
+      "text": "#1e293b"
+    }
+  },
+  "content": {
+    "message": "Este site usa cookies para garantir que você obtenha a melhor experiência de navegação. Desativar os cookies do site pode prejudicar a funcionalidade de alguns recursos.",
+    "dismiss": "Concordar e fechar",
+    "link": "Ler mais",
+    "href": "https://policies.google.com/?hl=pt-BR"
+  }
+});
 
-function aceito(){
-    localStorage.lgpd = "sim"
-    msgCookies.classList.remove('mostrar')
-}
-
-if(localStorage.lgpd == 'sim'){
-    msgCookies.classList.remove('mostrar')
-}else{
-    msgCookies.classList.add('mostrar')
-}
 
 
 

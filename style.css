@@ -661,11 +661,11 @@ rep
 
 /* --------------WhatsApp Button------ */
 .whats {
-    width: 60px;
+    width: 50px;
     position: fixed;
     bottom: 30px;
     right: 30px;
-    z-index: 9999;
+    z-index: 999;
 }
 
 
@@ -721,7 +721,7 @@ rep
 
 
 
-@media (width < 900px) {
+@media only screen and (max-width: 900px) {
     
     .hideOnMobile {
         display: none;
@@ -805,7 +805,7 @@ rep
     }
   }
   
-  @media (width < 750px) {
+  @media only screen and (max-width: 750px) {
     .nav__links {
       gap: 0.5rem;
     }
@@ -819,7 +819,7 @@ rep
     }
   }
   
-  @media (width < 600px) {
+  @media only screen and (max-width: 600px) {
     .nav__links {
       display: none;
     }
