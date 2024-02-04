@@ -5,7 +5,7 @@
 > Status: Developed ✅
 # <a href="https://yogamov.com.br"  target="_blank"><strong>➥ Live Demo</strong></a>
 
- ### It's a institutional fully responsive website for yoga studio, with information on types of classes, about the instructor,a little about yoga, links to social networks and contacts
+ ### It's a institutional fully responsive website for yoga studio, with information on types of classes, about the instructor, a little about yoga, links to social networks and contacts
 
 
  ## Some fields in main Model is:
